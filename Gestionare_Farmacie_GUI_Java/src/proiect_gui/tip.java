@@ -1,0 +1,5 @@
+package proiect_gui;
+
+public enum tip {
+	ANALGEZIC, PROBIOTIC, ANTIOXIDANT, NARCOTIC, ANTIINFECTIOS, ANTIINFLAMATOARE
+}

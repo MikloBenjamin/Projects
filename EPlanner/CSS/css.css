@@ -1,0 +1,435 @@
+*,::before,::after{
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    /*background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: linear-gradient(#8dbae4, #9e3737);*/
+    background: url('../logo3.jpeg');
+    display: inline-block;
+}
+input:focus, select:focus, button:focus {
+    outline: none;
+}
+
+#footer{
+    margin-bottom : 0;
+    text-align: center;
+}
+
+#image{
+    width: 100%;
+    height: 20%;
+    background: white;
+    border-top: 1px solid rgb(73, 74, 75);
+    border-bottom: 1px solid rgb(73, 74, 75);
+    display: inline-block;
+}
+#imageright{
+    float: right;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    margin-right: 5%;
+}
+#image img{
+    margin-left: 32.5%;
+    width: 35%;
+    height: 100%;
+}
+#lout{
+    float:left;
+    width: 40%;
+    height: 30%;
+    color: white;
+}
+#lout input{
+    width: 100%;
+    height: 100%;
+    background: rgb(121, 12, 12);
+    color:white;
+    border: none;   
+}
+
+
+#cont{
+    margin-left: 20%;
+    width: 60%;
+    height: 10%;
+    border-radius: 10px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 32px;
+    background: rgb(103, 104, 105);
+    bottom: 4px;
+    position: absolute;
+
+}
+
+#midleft{
+    float: left;
+    margin-left: 4px;
+    width: 60%;
+    height: 73%;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#midright{
+    float:left;
+    position: relative;
+    width: 39%;
+    height: 73%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: rgb(245, 246, 248);
+}
+
+#rightevents{
+    width: 100%;
+    height: 88.7%;
+    overflow-y: scroll;
+    border-bottom: 2px solid black;
+}
+
+#logout{
+    box-shadow: 1px 1px 3px black;
+    width: 60%;
+    margin-top: -10px;
+    margin-left: 20%;
+    height: auto;
+    border: none;
+    border-radius: 10px;
+    background: none;
+}
+#logoutbtn{
+    float: left;
+    margin-left: 30%;
+    width: 40%;
+    height: 100%;
+    border: 2px solid rgb(29, 27, 27);
+    border-radius: 10px;
+    background: linear-gradient(rgb(158, 38, 16), rgb(66, 66, 62));
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    box-shadow: 1px 1px 8px black;
+}
+#logoutbtn:hover{
+    cursor: pointer;
+    text-shadow: 4px 4px 4px black;
+}
+#yandm{
+    margin-top: 2%;
+    width: 60%;
+    margin-left: 20%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    
+}
+#years{
+    float: left;
+    margin: 2px 2px 2px 2px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px black;
+}
+#months{
+    float: right;
+    margin: 2px 2px 2px 2px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px black;
+}
+select{
+    width: 100%;
+    height: 100%;
+    background: #e9d358;
+    background: black;
+    color:white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    opacity: 0.9;
+}
+select:hover{
+    background: rgb(211, 198, 190);
+    color:black;
+}
+option{
+    border: 1px solid gray;
+    background: rgb(172, 167, 165);
+    cursor: pointer;
+}
+#lform{
+    width: 80%;
+    height: 10%;
+    margin-left: 10%;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: none;
+}
+#dnames{
+    margin-top: -1%;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+
+.day{
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 0 0 10px 0;
+    background: rgb(96, 96, 97);
+    color:white;
+    text-shadow: 1px 2px 3px black;
+    box-shadow: 1px 1px 3px black;
+    font-size: 32px;
+}
+
+.day:hover{
+    border: 1px solid black;
+    background: #451215;
+    cursor: pointer;
+}
+
+#days{
+    margin-top: 2px;
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-row-gap: 2px;
+    grid-column-gap: 10px;
+}
+
+#today{
+    background: rgb(124, 18, 18);
+    border-radius: 10px;
+    border: 1px solid black;
+    color:white;
+}
+#today:hover{
+    border: 1px solid black;
+    border-radius: 10px;
+    background: #451215;
+    color: white;
+    cursor: pointer;
+}
+
+.selectedDay{
+    color:white;
+    background: rgb(163, 3, 3);
+}
+
+label{
+    float:left;
+    margin-left: 5%;
+}
+
+input{
+    float:right;
+    background: none;
+    border: none;
+    width: 50%;
+}
+input:hover{
+    cursor: default;
+}
+
+#submit{
+    float: left;
+    margin-left: 20%;
+    width: 60%;
+    height: 10%;
+    background: #a31c1c;
+    font-size: 24px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: none;
+    bottom: 4px;
+    position: absolute;
+    box-shadow: 5px 5px 15px black;
+}
+#submit:hover{
+    cursor: pointer;
+    background: rgb(206, 48, 48);
+}
+
+.disabled{
+    border: 1px solid gray;
+    color: rgb(133, 40, 40);
+}
+
+#notloggedDiv{
+    margin-left: 30%;
+    overflow: hidden;
+    width: 40%;
+    height: 100%;
+    border-radius: 10px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    background: white;
+}
+#notloggedDiv img{
+    width: 130%;
+    height: 50%;
+    margin-left: -15%;
+}
+.betweensignandimage{
+    display:inline-block;
+}
+.icons{
+    float:left;
+    width: 20px;
+    height: 20px;
+}
+.sign{
+    margin-left: 30%;
+    margin-top:5%;
+    width: 40%;
+    height: 10%;
+    background: rgb(70, 8, 8);
+    color:white;
+    text-shadow: 3px 2px 1px black;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    font-size: 24px;
+    box-shadow: 5px 5px 15px black;
+}
+.sign:hover{
+    cursor: pointer;
+    background: rgb(138, 20, 20);
+}
+option{
+    width: 70%;
+    height: 20px;
+}
+
+#middlemonth{
+    font-family: 'Petit Formal Script';
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px red;
+    margin-left: 5%;
+}
+
+@media only screen and (max-width: 260px){
+    #dnames{
+        margin-top: 2%;
+        margin-left: 1%;
+        width: 98%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-gap: 10px;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        text-align: center;
+    }
+    #days{
+        margin-top: 2px;
+        margin-left: 1%;
+        width: 98%;
+        height: auto;
+        border-bottom: 2px solid black;
+            
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-row-gap: 2px;
+        grid-column-gap: 10px;
+    }
+    form{
+        margin: 2% 0 0 1%;
+        width: 98%;
+        height: auto;
+        border: 2px solid black;
+        background: rgb(85, 88, 92);
+        display: inline-block;
+        border-radius: 10px;
+    }
+    #logoutbtn{
+        float: left;
+        margin-left: 1%;
+        width: 98%;
+    }
+    #yandm{
+        margin-left: 1%;
+        margin-top: 2%;
+        width: 98%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+}
+
+@media only screen and (min-width: 261px) and (max-width: 360px){
+    #dnames{
+        margin-top: 2%;
+        margin-left: 10%;
+        width: 80%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-gap: 10px;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        text-align: center;
+    }
+    #days{
+        margin-top: 2px;
+        margin-left: 10%;
+        width: 80%;
+        height: auto;
+        border-bottom: 2px solid black;
+            
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-row-gap: 2px;
+        grid-column-gap: 10px;
+    }
+    form{
+        margin: 2% 0 0 10%;
+        width: 80%;
+        height: auto;
+        border: 2px solid black;
+        background: rgb(85, 88, 92);
+        display: inline-block;
+        border-radius: 10px;
+    }
+    #logoutbtn{
+        margin-left: 10%;
+        width: 80%;
+    }
+    #yandm{
+        margin-left:10%;
+        margin-top: 2%;
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    select{
+        font-size: 18px;
+    }
+}
